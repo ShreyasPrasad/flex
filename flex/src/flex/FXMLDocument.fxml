@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane id="root" fx:id="root" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@styles/launchWindowStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flex.FXMLDocumentController">
+    <children>
+      <Label id="usernameprompt" fx:id="usernameprompt" disable="true" layoutX="491.0" layoutY="140.0" text="Username:" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Arial Narrow" size="15.0" />
+         </font>
+      </Label>  
+            <Label id="prompt" fx:id="prompt" contentDisplay="RIGHT" layoutX="150.0" layoutY="250.0" prefHeight="31.0" prefWidth="301.0" visible="false" />
+            <Label id="logoHolder" fx:id="logoHolder" contentDisplay="RIGHT" layoutX="150.0" layoutY="43.0" prefHeight="275.0" prefWidth="301.0" visible="false" />
+      <Button id="signup" fx:id="signup" layoutX="313.0" layoutY="338.0" mnemonicParsing="false" onAction="#signUpHandle" prefHeight="31.0" prefWidth="99.0" style="-fx-border-color: steelblue; -fx-cursor: HAND;" stylesheets="@styles/launchWindowStyle.css" text="Sign-Up" textFill="STEELBLUE" visible="false">
+         <font>
+            <Font name="BebasNeueBold" size="18.0" />
+         </font>
+      </Button>
+      <Button id="login" fx:id="login" layoutX="192.0" layoutY="338.0" mnemonicParsing="false" onAction="#loginHandle" prefHeight="31.0" prefWidth="99.0" style="-fx-border-color: darkcyan; -fx-cursor: OPEN_HAND;" stylesheets="@styles/launchWindowStyle.css" text="Login" textFill="DARKCYAN" visible="false">
+         <font>
+            <Font name="BebasNeueBold" size="18.0" />
+         </font>
+      </Button>
+      <Pane id="sidePane" fx:id="sidePane" layoutX="599.0" prefHeight="400.0" prefWidth="6.0" style="-fx-background-color: steelBlue;" />
+      <Label id="passwordprompt" fx:id="passwordprompt" disable="true" layoutX="493.0" layoutY="200.0" text="Password:" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Arial Narrow" size="15.0" />
+         </font>
+      </Label>
+      <TextField id="username" fx:id="username" disable="true" layoutX="491.0" layoutY="168.0" prefHeight="25.0" prefWidth="85.0" visible="false" />
+      <PasswordField id="password" fx:id="password" disable="true" layoutX="491.0" layoutY="225.0" prefHeight="25.0" prefWidth="85.0" visible="false" />
+      <Label id="emailprompt" fx:id="emailprompt" disable="true" layoutX="491.0" layoutY="85.0" text="Enter email:" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Arial Narrow" size="15.0" />
+         </font>
+      </Label>
+      <TextField id="email" fx:id="email" disable="true" layoutX="491.0" layoutY="109.0" prefHeight="25.0" prefWidth="85.0" visible="false" />
+      <Rectangle id="rect2" fx:id="rect2" arcHeight="5.0" arcWidth="5.0" fill="DARKCYAN" height="37.0" layoutX="-1.0" layoutY="172.0" opacity="0.87" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" width="6.0" />
+      <Rectangle id="rect3" fx:id="rect3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="37.0" layoutX="-1.0" layoutY="207.0" opacity="0.87" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" width="6.0" />
+      <Rectangle id="rect1" fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="STEELBLUE" height="37.0" layoutX="-1.0" layoutY="139.0" opacity="0.87" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-fill: steelBlue;" visible="false" width="6.0" />
+      <Rectangle id="rect4" fx:id="rect4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="37.0" layoutX="-1.0" layoutY="238.0" opacity="0.87" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" width="6.0" />
+      <Button id="xbutton" layoutX="2.0" layoutY="3.0" mnemonicParsing="false" onAction="#Xhandle" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: transparent;" stylesheets="@styles/launchWindowStyle.css" fx:id="xbutton" />
+      <Button id="minbutton" fx:id="minbutton" layoutX="27.0" layoutY="2.0" mnemonicParsing="false" onAction="#minHandle" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: transparent;" stylesheets="@styles/launchWindowStyle.css" />
+      <Button id="submit" fx:id="submit" disable="true" layoutX="505.0" layoutY="267.0" mnemonicParsing="false" onAction="#submitHandle" opacity="0.37" style="-fx-background-color: transparent; -fx-border-color: white;" stylesheets="@styles/launchWindowStyle.css" text="Submit" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Arial Narrow Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label id="invalid" fx:id="invalid" contentDisplay="TEXT_ONLY" layoutX="485.0" layoutY="301.0" prefHeight="85.0" prefWidth="119.0" text="Invalid login." textFill="#b90f0f" visible="false">
+         <font>
+            <Font name="Arial Narrow" size="11.6" />
+         </font>
+      </Label>                
+    </children>
+</AnchorPane>

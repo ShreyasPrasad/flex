@@ -1,0 +1,39 @@
+/*for root pane attributes */
+#root{
+    -fx-background-image:url("../images/bg.jpg")
+}
+/*for logo image */
+#logoHolder{
+    -fx-background-image:url("../images/flexlogo.png")
+}
+/*for logo prompt*/
+#prompt{
+    
+    -fx-background-image:url("../images/logoprompt.png")
+}
+/*for sign-up button*/
+#signup {
+    -fx-background-color: transparent;
+}
+
+#login {
+    -fx-background-color: transparent;
+}
+#xbutton{
+    -fx-background-image: url("../images/xbutton.png")
+}
+#minbutton{
+    -fx-background-image: url("../images/minbutton.png")
+}
+
+#xbutton:hover{
+    -fx-border-color: steelblue
+}
+
+#minbutton:hover{
+    -fx-border-color: steelblue
+}
+
+#submit:hover{
+    -fx-background-color:black
+}
